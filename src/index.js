@@ -1,2 +1,2 @@
-console.log('Hello World');
-console.log('Hello World');
+console.error('Message to force error');
+console.error('Message to force error');
