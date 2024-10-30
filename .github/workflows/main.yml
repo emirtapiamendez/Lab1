@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Showing message
+      - uses: actions/checkout@v2
       - run: echo "🎉 A PR has created."
