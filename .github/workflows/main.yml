@@ -1,12 +1,11 @@
-name: GitHub Actions Demo
-on: 
+name: Example PR Workflow
+on:
   pull_request:
-    branches:
-      - "**"
+    types: [opened, synchronize, reopened, closed]
 jobs:
-  Explore-GitHub-Actions:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Showing message
-      - uses: actions/checkout@v2
-      - run: echo "🎉 A PR has created."
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: echo "The event type is ${{ github.event.action }}"
