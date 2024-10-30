@@ -1,1 +1,1 @@
-console.log('Hello Secondary 2 World!');
+console.log("Hello Secondary World!");
